@@ -1,0 +1,27 @@
+package estrutura_decisao;
+import java.util.Scanner;
+public class ex09 {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+// Entrar via teclado, com dois valores distintos. Exibir o menor deles.
+
+Scanner ler=new Scanner(System.in) ;
+     
+       double num01, num02;
+     
+       System.out.printf("Digite o primeiro número: ");
+       num01 = ler.nextDouble();
+     
+       System.out.printf("Digite o segundo número: ");
+       num02 = ler.nextDouble();
+                   
+       if (num01 < num02) {
+           System.out.printf("O primeiro número é o menor");
+       }else {
+           System.out.printf("O segundo número é o menor");
+       }
+}
+
+}
