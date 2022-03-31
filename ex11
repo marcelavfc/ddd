@@ -1,0 +1,32 @@
+package estrutura_decisao;
+import java.util.Scanner;
+public class ex11 {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+//Calcular e exibir a área de um retângulo, a
+//partir dos valores da base e altura que serão digitados.
+//Se a área for maior que 100, exibir a mensagem “Terreno grande”.
+
+
+Scanner ler=new Scanner(System.in);
+
+int Base, alt, a;
+
+System.out.printf("Digite o número da BASE: ");
+        Base = ler.nextInt();
+       
+        System.out.printf("Digite o número da ALTURA: ");
+        alt = ler.nextInt();
+       
+       
+        a = Base * alt;
+       
+        if (alt > 100) {
+            System.out.printf("Terreno GRANDE");
+       
+        }
+}
+
+}
