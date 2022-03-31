@@ -1,0 +1,41 @@
+package estrutura_decisao;
+
+import java.util.Scanner;
+
+public class ex17 {
+
+public static void main(String[] args) {
+
+Scanner ler = new Scanner(System.in);
+
+// Entrar com o peso, o sexo e a altura de uma determinada pessoa.
+//Após a digitação, exibir se esta pessoa
+//está ou não com seu peso ideal. Fórmula: peso/altura².
+
+double p, s, h, R;
+
+System.out.printf("Digite um n° para peso: ");
+        p = ler.nextDouble();
+       
+        System.out.printf("Digite 1 para sexo FEMININO e 2 para MASCULINO: ");
+        s = ler.nextDouble();
+       
+        System.out.printf("Agora digite a altura: ");
+        h = ler.nextDouble();
+       
+       R = p/(h*h);
+       
+       if (p<20)
+       {
+        System.out.println("Abaixo do Peso!");
+       }
+       else if (R<25)
+       {
+        System.out.println("Peso Ideal");
+       }
+       else {
+      System.out.println("Acima do Peso");
+       }
+
+}
+}
