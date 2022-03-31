@@ -1,0 +1,30 @@
+package entrada_processamento_saida;
+
+import java.util.Scanner;
+
+public class ex06 {
+
+public static void main(String[] args) {
+
+
+//  Entrar via teclado com o valor da cotação do dólar e uma certa
+// quantidade de dólares. Calcular e exibir o valor correspondente em Reais (R$).
+
+
+Scanner ler = new Scanner(System.in);
+
+double c, q, r;    
+
+System.out.printf("Digite a quantidade de dolares: ");    
+q= ler.nextDouble();
+
+System.out.printf("Digite o valor da cotação: ");      
+c = ler.nextDouble();  
+
+r = q * c;    
+
+System.out.printf(" O valor é de R$ " + r) ;
+
+
+
+}
