@@ -1,0 +1,33 @@
+package entrada_processamento_saida;
+import java.util.Scanner;
+public class ex04 {
+public static void main(String[] args) {
+
+
+          Scanner ler = new Scanner(System.in);
+
+int a, b, c, d, f, m;
+
+System.out.printf("Digite o primeiro valor: ");
+a=ler.nextInt();
+
+System.out.printf("Digite o segundo valor: ");
+b=ler.nextInt();
+
+System.out.printf("Digite o terceiro valor: ");
+c=ler.nextInt();
+
+System.out.printf("Digite o quarto valor: ");
+d=ler.nextInt();
+
+System.out.printf("Digite o quinto valor: ");
+f=ler.nextInt();
+
+m= (a+b+c+d+f)/5;
+
+System.out.printf("A média artimética é %d", m);
+
+
+}
+
+}
