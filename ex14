@@ -1,0 +1,31 @@
+package estrutura_decisao;
+
+import java.util.Scanner;
+
+public class ex14 {
+
+public static void main(String[] args) {
+
+// 14. Entrar com o peso e a altura de uma determinada pessoa. Após a digitação,
+// exibir se esta pessoa está ou não com seu peso ideal. Fórmula: peso/altura².
+
+Scanner ler = new Scanner(System.in) ;
+
+double a, p, R;
+
+System.out.println("Digite a sua altura: ");
+a = ler.nextDouble();
+System.out.println("Digite o seu peso: ");
+p = ler.nextDouble();
+     
+      R = p / (a * a);
+             
+      if ((R >= 25) && (R < 20)) {
+          System.out.printf("Você está no peso IDEAL");
+     
+      }else {
+          System.out.printf("Você não está no peso IDEAL");
+         
+      }
+
+}
