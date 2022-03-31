@@ -1,0 +1,19 @@
+package ex20;
+import java.util.Scanner;
+public class ex21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner ler = new Scanner(System.in);
+
+		//Criar uma rotina de entrada que aceite somente um valor positivo
+		
+		int num, t, i;
+	       
+        System.out.printf("Digite um número positivo: ");
+        num = ler.nextInt();
+       
+        while(num <= 0) {
+            System.out.printf("Erro, número negativo! Digite um número positivo: ");
+            num = ler.nextInt();
