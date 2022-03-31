@@ -1,0 +1,32 @@
+package entrada_processamento_saida;
+import java.util.Scanner;
+public class ex05 {
+
+public static void main(String[] args) {
+
+//Entrar via teclado com o valor de uma temperatura em graus Celsius,
+// calcular e exibir sua temperatura equivalente em Fahrenheit.
+
+Scanner ler = new Scanner(System.in);
+
+int c, f;
+
+System.out.printf("Digite uma temperatura em graus Celsius: ");
+c=ler.nextInt();
+
+f= 32 + (c*9/5) ;
+
+
+System.out.printf("Esse valor equivale á %d °F", f);
+
+
+
+
+
+
+
+
+
+}
+
+}
