@@ -1,0 +1,37 @@
+package estrutura_decisao;
+
+import java.util.Scanner;
+
+public class ex16 {
+
+public static void main(String[] args) {
+
+// Verificar se três valores quaisquer (A, B, C)
+//que serão digitados formam ou não um triângulo retângulo.
+//Lembre-se que o quadrado da hipotenusa é igual a
+// soma dos quadrados dos catetos.
+
+Scanner ler=new Scanner(System.in) ;
+
+double a, b, c;
+
+System.out.println("Digite lado A: ");
+a = ler.nextDouble();
+
+System.out.println("Digite lado B: ");
+b = ler.nextDouble();
+
+System.out.println("Digite lado C: ");
+c= ler.nextDouble();
+       
+        if (b + c > a && a + c > b && a + b > c)
+        {
+        System.out.println("Esses dados formam um TRIÂNGULO RETÂNGULO!");
+        }
+        else
+        {
+        System.out.println("Esses dados NÃO formam um TRIÂNGULO RETÂNGULO!");
+        }
+        }
+
+}
