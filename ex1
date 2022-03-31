@@ -1,0 +1,33 @@
+package entrada_processamento_saida;
+
+import java.util.Scanner;
+
+public class ex01 {
+public static void main(String[] args) {
+
+//Entrar via teclado com a base e a altura de um retângulo, calcular e exibir sua área.
+
+Scanner ler = new Scanner(System.in);
+
+int b, h, a;
+
+System.out.printf("Digite o valor da base: ");
+b=ler.nextInt();
+
+System.out.printf("Digite o valor de altura: ");
+h=ler.nextInt();
+
+a= b*h;
+
+System.out.printf("A área do retângulo é %d", a);
+
+
+
+
+
+
+
+
+}
+
+}
