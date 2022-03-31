@@ -1,0 +1,50 @@
+package estrutura_decisao;
+
+import java.util.Scanner;
+
+public class ex15 {
+
+public static void main(String[] args) {
+
+// A partir de três valores que serão digitados, verificar se formam ou não um
+// triângulo. Em caso positivo, exibir sua classificação: “Isósceles, escaleno
+// ou eqüilátero”. Um triângulo escaleno possui todos os lados diferentes, o
+// isósceles, dois lados iguais e o eqüilátero, todos os lados iguais. Para
+// existir triângulo é necessário que a soma de dois lados quaisquer seja maior
+// que o outro, isto, para os três lados.
+
+Scanner ler=new Scanner(System.in) ;
+
+double a,b,c;      
+
+System.out.println("Digite lado A: ");
+a = ler.nextDouble();
+
+System.out.println("Digite lado B: ");
+b = ler.nextDouble();
+
+System.out.println("Digite lado C: ");
+c= ler.nextDouble();
+
+if (a == b || a == c || b ==  c) {
+
+System.out.println(" É um triângulo isósceles!"); }
+
+else if (a == b && b == c) {
+
+System.out.println( "É um triângulo equilátero!"); }
+
+else if (a != b && b != c && c != a)
+   {
+System.out.println( "É um triângulo escaleno!");
+   }
+else
+{
+System.out.println( "NÃO É UM TRIÂNGULO!");
+}
+
+
+}
+
+
+}
