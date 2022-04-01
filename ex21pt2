@@ -1,0 +1,27 @@
+package ex20;
+
+import java.util.Scanner;
+
+public class ex21pt2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner ler = new Scanner(System.in);
+
+		// Entrar com dois valores via teclado, onde o segundo deverá ser maior que o
+		// primeiro. Caso contrário solicitar novamente apenas o segundo valor.
+
+		int num, num2;
+
+		do {
+			System.out.printf("Digite um número positivo: ");
+			num = ler.nextInt();
+			System.out.printf("Digite um número maior que o primeiro: ");
+			num2= ler.nextInt();
+			
+		} while (num2 < num);
+
+	}
+
+}
